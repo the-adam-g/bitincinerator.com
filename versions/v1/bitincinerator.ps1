@@ -17,7 +17,7 @@ if (-not $path) {
 $path = $path.Replace('"', '')
 $contentslength = (Get-Item $path).Length
 if (-not $passes) {
-    Write-Host $contentslength + " bytes changed"
+    Write-Host $contentslength " bytes changed"
     $bytes = New-Object byte[] $contentslength
     [System.Security.Cryptography.RandomNumberGenerator]::Create().GetBytes($bytes)
     [System.IO.File]::WriteAllBytes($path, $bytes)
