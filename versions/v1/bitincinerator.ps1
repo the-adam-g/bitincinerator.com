@@ -28,6 +28,6 @@ if (-not $passes) {
         [System.Security.Cryptography.RandomNumberGenerator]::Create().GetBytes($bytes)
         [System.IO.File]::WriteAllBytes($path, $bytes)
     }
-    Write-Host "File sucessfully incinerated. " $passes "passes performed"
+    Write-Host "File successfully incinerated. " $passes "passes performed"
     Write-Host "Thank you for using BitIncinerator"
 }
